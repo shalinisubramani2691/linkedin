@@ -1,0 +1,17 @@
+input[type="text"]{
+    border:2px solid blue;
+}
+.background>p{
+    background-color:green;
+     margin-left:40px;
+}
+div+p{
+    color:red;
+}
+
+span{
+    color:black;
+}
+.child>p{
+    color: yellow;
+}

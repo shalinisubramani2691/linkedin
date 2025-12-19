@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        body{
+            margin:0;
+            background-color:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:95vh;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            box-shadow:0 0 5px rgba(0,0,0,0);
+            width:100%;
+            align-items:center;
+        
+        }
+        .box{
+            background-color:#fff;
+            padding:40px 60px;
+            border-radius:6px;
+            text-align:center;
+            width:70%;
+        }
+        .input-group{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+            margin-bottom:20px;
+            padding:6px 8px;
+            font-size:12px;
+            text-align:center;
+            gap:20px;
+        }
+        button{
+            background-color:#007bff;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            font-size:12px;
+            border-radius:2px;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <form action="#">
+        <h2>Sign up</h2>
+        <div class="input-group">
+            <input type="text" name="User name" placeholder="User name">
+            <input type="text" name="Email" placeholder="Email">
+            <input type="text" name="Password" placeholder="Password">
+            <input type="text" name="Confirm Password" placeholder="Confirm Password"> 
+        </div>
+        <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

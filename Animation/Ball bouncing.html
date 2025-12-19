@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bouncing</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .ball{
+            animation-name: ball;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: palevioletred;
+            animation: ball 3s infinite ease 1s alternate forwards;
+            /* justify-content: center;
+            align-items: center; */
+            /* margin:250px; */
+            transform: rotate(360deg); 
+            transition: 0.2s;            
+        }
+
+        @keyframes ball{
+            0% {
+ 
+                animation-timing-function: ease-out;
+                transform: scale(0);
+                color:brown
+
+            }
+            10%  {
+                animation-timing-function: ease-out;
+                transform: scale(0.5);
+                color:aqua;
+            }
+            100% {
+                transform: scale(1);
+                color: plum;
+
+            } 
+        } 
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

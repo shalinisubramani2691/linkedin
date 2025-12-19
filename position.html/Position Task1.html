@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        body{
+            height:1500px;
+        }
+        *{
+             margin:0px;
+            padding:0px;
+        }
+        nav{
+            background-color:black;
+            width:100%;
+            height:30px;
+            color:white;
+            padding:10px;
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:1;
+        }
+        .boxes{
+            height:490px;
+            width:530px;
+            margin:3px;
+            margin-top:55px;
+            border:2px solid orange;
+            background-color:orange;
+            position:relative;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .box1{
+            height:90px;
+            width:490px;
+            margin:40px;
+            margin-left:30px;
+            border:2px solid limegreen;
+            border-radius:4px;
+            background-color:rgb(155, 247, 242);
+            position:absolute;
+            text-align:left;
+        }
+        .box2{
+            height:100px;
+            width:500px;
+            margin:2px; 
+            margin-left:15px; 
+            margin-bottom:0px;         
+            border:2px solid bisque;
+            border-radius:4px;
+            background-color:bisque;
+            text-align:left;
+            position:sticky;
+            top:220px;
+        }
+        .box{
+            height:130px;
+            width:160px;
+            margin:3px;
+            border:2px solid dodgerblue;
+            border-radius:4px;
+            background-color:rgb(175, 195, 234);
+            text-align:left;
+            margin-left:15px;
+            padding:2px;
+            position:absolute;
+            top:130px;
+            right:2px; 
+        }
+        p{
+            margin-bottom:0px;
+            margin-top:0px;
+            margin-left:15px;
+            line-height:1.6;
+        }
+        h2,h4{
+            margin-top:15px;
+            margin-left:15px;
+        }
+        .content{
+            max-width:510px;
+            margin-bottom:0px;
+            margin-top:210px;
+            text-align:left;
+            margin-left:13px;
+            line-height:1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <table>
+        <tr>
+        <th>Fixed Navbar</th>
+        </tr>
+      </table>
+    </nav>
+    <div class="boxes">
+        <div class="box1">
+            <h2>Relative Card</h2>
+            <p>This card is positioned relative to its normal position with a slight offset.</p>
+        </div>
+        <div class="box2">
+            <h2>Sticky Card</h2>
+            <p>This card will stick to the top of the viewport when scrolled past a certain  point,
+                staying visible under the navbar.</p>
+        </div>
+        <div class="content">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum distinctio sequi 
+            quos soluta eligendi iusto aliquam recusandae alias suscipit quidem natus earum quasi 
+            architecto impedit, esse dolore ipsam tempore at?
+        </p>
+        <p style="margin-top:0px;">More scrollable content here to test sticky and fixed elements behavior.Keep
+            scrolling to observe sticky card sticking behavior and the fixed navbar at the top.</p>
+            </div>
+    </div>
+    <div class="box"> 
+        <h4 style="margin-left:15px; margin-top:0px;">Notification:</h4>
+        <p style="margin-left:15px;margin-top:0px;line-height:1.4;max-width:140px;">This message is absolutely positioned near the top-right,overlapping content.</p>
+    </div>
+</body>
+</html>

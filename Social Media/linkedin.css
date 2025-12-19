@@ -1,0 +1,73 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #fff;
+    padding-left: 160px;
+    padding-right: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+body{
+    height: 3000px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #faf9f6;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    height: 35px;
+    margin-right: 5px;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-right: 120px;
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-section{
+    display: flex;
+    border-left: 1px solid rgba(199, 192, 192, 0.5);
+    width: 140px;
+    margin-left: 30px;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.search-box{
+    padding: 7px;
+    border: 1px solid rgba(199, 192, 192, 0.5);
+    background-color: rgba(175, 211, 233, 0.349);
+    width: 300px;
+    background-image: url(icons/search-magnifying-glass-svgrepo-com.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    outline: 0;
+    background-position: 10px;
+}
+
+.search-box::placeholder{
+    font-size: 14px;
+    padding: ;
+}

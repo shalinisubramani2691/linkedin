@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkedIn | My Network</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="index1.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">in</a>
+            <input type="text" class="search-bar" placeholder="🔍 Search">
+            
+              <ul class="nav-links">
+                    <li><a class="active" href="feed.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="network.html"><i class="fa-sharp-duotone fa-solid fa-people-line"></i>My Network</a></li>
+                    <li><a href="jobs.html"><i class="fa-solid fa-bag-shopping"></i>Jobs</a></li>
+                    <li><a href="messages.html"><i class="fa-duotone fa-solid fa-comment-dots"></i>messages</a></li>
+                    <li><a href="notifications.html"><i class="fa-duotone fa-solid fa-bell"></i>Notifications</a></li>
+                    <li><a href="learning.html"><i class="fa-duotone fa-solid fa-play"></i>Learning</a></li>
+              </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-primary">Join now</button>
+                <button class="btn btn-secondary">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+<!-- ===== MAIN LAYOUT ===== -->
+<div class="container">
+
+  <!-- ===== LEFT SIDEBAR (STICKY) ===== -->
+  <aside class="sidebar-left">
+    <div class="sidebar-card">
+      <h4>Manage my network</h4>
+      <p>Connections  <b>10</b></p>
+      <p>Contacts  <b>25</b></p>
+      <p>Following  <b>3</b></p>
+      <p>Groups  <b>1</b></p>
+      <p>Events  <b>0</b></p>
+    </div>
+  </aside>
+
+  <!-- ===== CENTER CONTENT ===== -->
+  <main class="network-main">
+
+    <!-- INVITES -->
+    <section class="network-section">
+      <div class="section-header">
+        <h3>Invites received (1)</h3>
+        <a href="#">Show all</a>
+      </div>
+
+      <div class="invite-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg">
+        <div class="invite-info">
+          <h4>Praveen Kumar</h4>
+          <p>Aspiring Data Analyst</p>
+        </div>
+        <div class="invite-actions">
+          <button class="ignore">Ignore</button>
+          <button class="accept">Accept</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEOPLE YOU MAY KNOW -->
+    <section class="network-section">
+      <div class="section-header">
+        <h3>People you may know from EOS GLOBE</h3>
+        <!-- <a href="#">Show all</a> -->
+         <a href="#peopleModal" class="show-all-link">Show all</a>
+
+<!-- MODAL OVERLAY -->
+<div id="peopleModal" class="modal-overlay">
+
+    <div class="modal-box">
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+            <h2>People you may know from Periyar University, Salem</h2>
+            <a href="#" class="close-btn">✕</a>
+        </div>
+
+        <!-- PROFILE GRID -->
+        <div class="people-grid">
+
+            <!-- CARD 1 -->
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://imgcdn.stablediffusionweb.com/2025/2/4/cd602479-7337-4982-b93d-4bd34311b1d7.jpg" />
+                <h4>Shobanasandhiya</h4>
+                <p>Accessibility Testing</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://static.vecteezy.com/system/resources/previews/036/459/947/original/ai-generated-confident-young-asian-indian-businesswoman-portrait-png.png" />
+                <h4>Swathi Periyasamy</h4>
+                <p>Angular Developer</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://i.pinimg.com/originals/af/9f/1f/af9f1fed99621ae20f9edd2ab6cbb8bd.jpg" />
+                <h4>Rohith Kannan</h4>
+                <p>Immediate Joiner</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://tse2.mm.bing.net/th/id/OIP.83PETp6-ZVq7ZOJqVJylPwHaJc?pid=Api&P=0&h=180" />
+                <h4>Anusha</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://img.freepik.com/premium-photo/young-indian-businessman-in-a-suit-and-tie-standing-in-an-office-ai-generated_843560-800.jpg" />
+                <h4>Lalith Krishna</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://img.freepik.com/premium-photo/indian-womens-professional-profile-image-red-suit-businesswoman_1238201-34.jpg" />
+                <h4>Kayalvizhi</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://images.rawpixel.com/image_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNV9iZWF1dGlmdWxfc21pbGluZ195b3VuZ19pbmRpYW5fYnVzaW5lc3Nfd29tYV8yYWM3MjMyNS1jZmU3LTQ5ODgtODBkNi03YjViZTg3ODYzNjNfMS5qcGc.jpg"/>
+                <h4>Swetha</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://img.freepik.com/premium-photo/professional-indian-woman-confident-poised-business-portrait_606187-8178.jpg"/>
+                <h4>Preethi</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="people-grid">
+        <div class="person-card">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg">
+          <h4>Abi Nav</h4>
+          <p>Digital Marketing Analyst</p>
+          <!-- <img src="https://eosglobe.com/wp-content/uploads/2022/09/eosglobe-sharecard.webp" class="logo"> -->
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg">
+          <h4>Keerthana M</h4>
+          <p>HR Executive</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://randomuser.me/api/portraits/men/78.jpg">
+          <h4>Arun Kumar</h4>
+          <p>Software Engineer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://imgcdn.stablediffusionweb.com/2024/11/26/ce6f3141-5a1f-45e2-b6c9-afc10a1f7f0c.jpg">
+          <h4>Dheeksha</h4>
+          <p>Python Developer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/confident-man-using-laptop-modern-office-business-casual-attire-with-productive-vibe_139623-3125.jpg">
+          <h4>Tharun</h4>
+          <p>Java Developer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/young-salesman-smiling-businessman_1012929-18.jpg">
+          <h4>Nishanth</h4>
+          <p>Mechanical Engineer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/man-with-glasses-black-jacket-stands-with-his-arms-crossed_662214-21359.jpg">
+          <h4>Ankit</h4>
+          <p>Trainee Network Engineer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/smiling-man-suit-holding-folder_742252-24523.jpg">
+          <h4>Faizen</h4>
+          <p>Manager-MIF at EOS</p>
+          <button>+ Connect</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <main class="network-main-1">
+
+  <section class="network-section">
+      <div class="section-header">
+        <h3>People you may know from Periyar University</h3>
+        <!-- <a href="#">Show all</a> -->
+        <!-- Show all button -->
+<a href="#peopleModal" class="show-all-link">Show all</a>
+
+<!-- MODAL OVERLAY -->
+<div id="peopleModal" class="modal-overlay">
+
+    <div class="modal-box">
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+            <h2>People you may know from Periyar University, Salem</h2>
+            <a href="#" class="close-btn">✕</a>
+        </div>
+
+        <!-- PROFILE GRID -->
+        <div class="people-grid">
+
+            <!-- CARD 1 -->
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://imgcdn.stablediffusionweb.com/2025/2/4/cd602479-7337-4982-b93d-4bd34311b1d7.jpg" />
+                <h4>Shobanasandhiya</h4>
+                <p>Accessibility Testing</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://static.vecteezy.com/system/resources/previews/036/459/947/original/ai-generated-confident-young-asian-indian-businesswoman-portrait-png.png" />
+                <h4>Swathi Periyasamy</h4>
+                <p>Angular Developer</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://i.pinimg.com/originals/af/9f/1f/af9f1fed99621ae20f9edd2ab6cbb8bd.jpg" />
+                <h4>Rohith Kannan</h4>
+                <p>Immediate Joiner</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://tse2.mm.bing.net/th/id/OIP.83PETp6-ZVq7ZOJqVJylPwHaJc?pid=Api&P=0&h=180" />
+                <h4>Anusha</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://img.freepik.com/premium-photo/young-indian-businessman-in-a-suit-and-tie-standing-in-an-office-ai-generated_843560-800.jpg" />
+                <h4>Lalith Krishna</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://img.freepik.com/premium-photo/indian-womens-professional-profile-image-red-suit-businesswoman_1238201-34.jpg" />
+                <h4>Kayalvizhi</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://images.rawpixel.com/image_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNV9iZWF1dGlmdWxfc21pbGluZ195b3VuZ19pbmRpYW5fYnVzaW5lc3Nfd29tYV8yYWM3MjMyNS1jZmU3LTQ5ODgtODBkNi03YjViZTg3ODYzNjNfMS5qcGc.jpg"/>
+                <h4>Swetha</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            <div class="person-card">
+                <span class="dismiss">✕</span>
+                <img src="https://img.freepik.com/premium-photo/professional-indian-woman-confident-poised-business-portrait_606187-8178.jpg"/>
+                <h4>Preethi</h4>
+                <p>Periyar University</p>
+                <button class="connect-btn">+ Connect</button>
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+
+      <div class="people-grid">
+        <div class="person-card">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg">
+          <h4>Abi Nav</h4>
+          <p>Digital Marketing Analyst</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg">
+          <h4>Keerthana M</h4>
+          <p>HR Executive</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://randomuser.me/api/portraits/men/78.jpg">
+          <h4>Arun Kumar</h4>
+          <p>Software Engineer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://imgcdn.stablediffusionweb.com/2024/11/26/ce6f3141-5a1f-45e2-b6c9-afc10a1f7f0c.jpg">
+          <h4>Dheeksha</h4>
+          <p>Python Developer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/confident-man-using-laptop-modern-office-business-casual-attire-with-productive-vibe_139623-3125.jpg">
+          <h4>Tharun</h4>
+          <p>Java Developer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/young-salesman-smiling-businessman_1012929-18.jpg">
+          <h4>Nishanth</h4>
+          <p>Mechanical Engineer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/man-with-glasses-black-jacket-stands-with-his-arms-crossed_662214-21359.jpg">
+          <h4>Ankit</h4>
+          <p>Trainee Network Engineer</p>
+          <button>+ Connect</button>
+        </div>
+
+        <div class="person-card">
+          <img src="https://img.freepik.com/premium-photo/smiling-man-suit-holding-folder_742252-24523.jpg">
+          <h4>Faizen</h4>
+          <p>Manager-MIF at EOS</p>
+          <button>+ Connect</button>
+        </div>
+      </div>
+    </section>
+    </main>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            border-radius:50%;
+            /* box-shadow: -10px 20px 30px inset black, 
+                          20px -10px 30px rgb(216, 138, 216) */
+            /* background: linear-gradient(purple, violet, darkmagenta); */
+            /* background: linear-gradient(250deg, lightcoral,lightpink); */
+            background: radial-gradient(orange,yellow,gold);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* .fade-in{
+            animation-name: fade-in;
+            animation-duration: 15s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-direction:alternate;
+            
+        }
+        @keyframes fade-in{
+            0%{
+                 opacity: 0;
+                 color:red;
+                }
+            50%{ 
+                opacity: 0.5;
+                color:purple;
+            }
+            100%{
+                opacity: 1;
+                color: aqua;
+            }
+        } */
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            animation: box 3s infinite ease-in-out 1s alternate;
+        }
+
+    @keyframes box{
+        0% {transform: translateX(0px);}
+        50% {transform: translateX(200px);}
+        100%{transform:translateX(0);}
+}
+    </style>
+</head>
+<body>
+    <!-- <h1 class="fade-in">Fade-in Animation</h1> -->
+     <div class="box"></div>
+</body>
+</html>

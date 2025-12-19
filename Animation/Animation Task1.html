@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX ROTATING</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(216, 25, 63);
+            animation: box 3s infinite ease 1s alternate forwards;
+            /* justify-content: center;
+            align-items: center; */
+            margin:250px;
+            transform: rotate(360deg);
+            transition: 1s;
+
+            
+        }
+
+    @keyframes box{
+        0% {
+            transform:rotate(0deg);
+        }
+        1000% {
+            transform: rotate(360deg);
+        }
+      
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

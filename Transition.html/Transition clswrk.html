@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D</title>
+    <style>
+        .cards{
+            border:1px solid brown;
+            height: 300px;
+            width: 250px;
+            margin: 75px auto;
+            perspective: 800px;
+        }
+
+        .card-face{
+            height:100%;
+            width:100%;
+            display:flex;
+            font-size:4rem;
+            justify-content:center;
+            align-items:center;
+            transform:translateZ(-100px);
+            background-color:burlywood;
+            color:white;
+
+        }
+
+        .card-face:hover{
+            transform:rotateY(180deg);
+            transition:transform 2s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card-face">Card</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Cards</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Outer frame lines */
+.wrapper {
+    position: relative;
+}
+
+.frame {
+    width: 320px;
+    height: 250px;
+    border-top: 6px solid #00eaff;
+    border-bottom: 6px solid #00eaff;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Card container */
+.cards {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+/* Base card styling */
+.card {
+    width: 170px;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: absolute;
+}
+
+/* Specific card colors + positions */
+.html {
+    background: #e96b84;
+    transform: translate(20px, -90px);
+    z-index: 2;
+    
+}
+
+.css {
+    background: #a4b2d2;
+    transform: translate(-25px, -27px);
+    z-index: 1;
+}
+
+.bootstrap {
+    background:greenyellow;
+    transform: translate(-70px, 38px);
+    /* z-index: 1; */
+}
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="frame"></div>
+
+    <div class="cards">
+        <div class="card html">HTML</div>
+        <div class="card css">CSS</div>
+        <div class="card bootstrap">BOOTSTRAP</div>
+    </div>
+</div>
+
+</body>
+</html>

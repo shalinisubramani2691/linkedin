@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Swing Task3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            /* height: 100vh;
+            width: 100%;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center; */
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .wrapper{
+            height: 230px;
+            width: 260px;
+            /* position: relative; */
+            border: 1px solid #0a121a;
+            transform: perspective(2500px);
+            transform-style: preserve-3d;
+            margin:auto;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .door{
+            background-image: url(./glitter1.jpg);
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .door1{
+            top: 0;
+            left: 0;
+            border-right: 1px solid #9ebbd7;
+            transform-origin: left;
+            animation: door1 8s ease-in-out forwards infinite;
+            font-size: 70px;
+            font-weight: bold;
+            font-style: italic;
+            color: #fff;
+        }
+
+        .door2{
+            top: 0;
+            right: 0;
+            border-left: 1px solid #9ebbd7;
+            transform-origin: right;
+            animation: door2 8s ease-in-out forwards infinite;
+             font-size: 70px;
+            font-weight: bold;
+            font-style: italic;
+            color: #fff;
+        }
+
+        @keyframes door1{
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(-180deg);
+            }
+        }
+        @keyframes door2{
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(180deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="./Linga.jpg" alt="baby">
+        <div class="door door1">L<br>i</r></div>
+        <div class="door door2">L<br>i</div>
+    </div>
+
+    <div class="wrapper">
+        <img src="./Linga2.jpg" alt="baby">
+        <div class="door door1">n</div>
+        <div class="door door2">n</div>
+    </div>
+
+    <div class="wrapper">
+        <img src="./Linga5.jpg" alt="baby">
+        <div class="door door1">g<br>a</div>
+        <div class="door door2">g<br>a</div>
+    </div>
+</body>
+</html>

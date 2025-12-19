@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Linkedin</title>
+  <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">in</a>
+            <input type="text" class="search-bar" placeholder="🔍 Search">
+            
+              <ul class="nav-links">
+                    <li><a class="active" href="feed.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="network.html"><i class="fa-sharp-duotone fa-solid fa-people-line"></i>My Network</a></li>
+                    <li><a href="jobs.html"><i class="fa-solid fa-bag-shopping"></i>Jobs</a></li>
+                    <li><a href="messages.html"><i class="fa-duotone fa-solid fa-comment-dots"></i>messages</a></li>
+                    <li><a href="notifications.html"><i class="fa-duotone fa-solid fa-bell"></i>Notifications</a></li>
+                    <li><a href="learning.html"><i class="fa-duotone fa-solid fa-play"></i>Learning</a></li>
+              </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-primary">Join now</button>
+                <button class="btn btn-secondary">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar-left">
+            <div class="profile-card">
+                <div class="profile-header"></div>
+                <div class="profile-info">
+                    <div class="profile-avatar"><img src="https://wemeancareer.com/wp-content/uploads/2020/04/Professional-LinkedIn-Headshot.png" class="img-1"></div>
+                    <h2 class="profile-name">Sarah Johnson</h2>
+                    <p class="profile-title">Product Manager at Tech Co.</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <div class="stat-number">450</div>
+                            <div class="stat-label">profile views</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">post likes</div>
+                        </div>
+                    </div>
+                    <button class="view-profile-btn">View profile</button>
+                </div>
+            </div>
+
+            <div class="suggestions-card">
+                <h3>People you may know</h3>
+                
+                <div class="suggestion-item">
+                    <div class="suggestion-avatar">👨</div>
+                    <div style="flex: 1;">
+                        <div class="suggestion-name">James Wilson</div>
+                        <div class="suggestion-title">Senior Developer</div>
+                        <button class="follow-btn">+ Follow</button>
+                    </div>
+                </div>
+
+                <div class="suggestion-item">
+                    <div class="suggestion-avatar">👩</div>
+                    <div style="flex: 1;">
+                        <div class="suggestion-name">Emma Davis</div>
+                        <div class="suggestion-title">UX Designer</div>
+                        <button class="follow-btn">+ Follow</button>
+                    </div>
+                </div>
+
+                <div class="suggestion-item">
+                    <div class="suggestion-avatar">👨</div>
+                    <div style="flex: 1;">
+                        <div class="suggestion-name">Michael Chen</div>
+                        <div class="suggestion-title">Product Manager</div>
+                        <button class="follow-btn">+ Follow</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN FEED -->
+        <main class="feed">
+            <!-- POST COMPOSER -->
+            <div class="post-composer">
+                <div class="composer-header">
+                    <div class="composer-avatar"><img src="https://wemeancareer.com/wp-content/uploads/2020/04/Professional-LinkedIn-Headshot.png" class="img-2"></div>
+                    <input type="text" class="composer-input" placeholder="Start a post, try writing with #hashtag or @mention">
+                </div>
+                <div class="composer-actions">
+                    <button class="action-btn">
+                        <span>🖼️</span>
+                        <span>Photo</span>
+                    </button>
+                    <button class="action-btn">
+                        <span>🎥</span>
+                        <span>Video</span>
+                    </button>
+                    <button class="action-btn">
+                        <span>📋</span>
+                        <span>Article</span>
+                    </button>
+                    <button class="action-btn">
+                        <span>📊</span>
+                        <span>Poll</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- POST 1 -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <div class="author-avatar"><img src="https://www.for-image.com/wp-content/uploads/2023/01/LinkedIn-studio-headshot-photographer-london-1024x1024.jpg" class="img-2"></div>
+                        <div class="author-info">
+                            <div class="author-name">Alex Martinez</div>
+                            <div class="author-role">Creative Director at Design Studio</div>
+                            <div class="post-time">2 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="post-menu">⋯</div>
+                </div>
+
+                <div class="post-content">
+                    Just launched our new design system! Really proud of the team's work. This has been months in the making and I'm excited to see how it improves our workflow. #design #productmanagement #teamwork
+                </div>
+
+                <div class="post-image"><img src="https://www.elpassion.com/hs-fs/hubfs/Design%20System%20component%20library.png?width=3840&height=2160&name=Design%20System%20component%20library.png" class="feed"></div>
+
+                <div class="post-engagement">
+                    <span>324 reactions • 45 comments • 67 shares</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="post-action-btn">
+                        <span>👍</span>
+                        <span>Like</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>💬</span>
+                        <span>Comment</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>↗️</span>
+                        <span>Share</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>✈️</span>
+                        <span>Send</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- POST 2 -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <div class="author-avatar"><img src="https://imgcdn.stablediffusionweb.com/2024/3/18/bff4c2ae-4d9a-4505-9664-c7f900cda8c6.jpg" class="img-2"></div>
+                        <div class="author-info">
+                            <div class="author-name"></div>
+                            <div class="author-role">Software Engineer at TechCorp</div>
+                            <div class="post-time">4 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="post-menu">⋯</div>
+                </div>
+
+                <div class="post-content">
+                    Excited to announce that I'm joining a new startup as Lead Engineer! Looking forward to building something amazing from the ground up. If you're interested in #hiring or want to collaborate, let's connect! #carrierchanges #newchapter
+                </div>
+
+                <div class="Post-image"><img src="https://marketplace.canva.com/EAFWZiNX53k/1/0/400w/canva-navy-white-yellow-3d-we-are-hiring-seo-developer-linkedin-post-JDHyIL8JZX4.jpg"class="feed"></div>
+
+                <div class="post-engagement">
+                    <span>582 reactions • 73 comments • 156 shares</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="post-action-btn">
+                        <span>👍</span>
+                        <span>Like</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>💬</span>
+                        <span>Comment</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>↗️</span>
+                        <span>Share</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>✈️</span>
+                        <span>Send</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- POST 3 -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <div class="author-avatar"><img src="https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png" class="img-2"></div>
+                        <div class="author-info">
+                            <div class="author-name">David Rodriguez</div>
+                            <div class="author-role">Business Analyst at Fortune 500</div>
+                            <div class="post-time">6 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="post-menu">⋯</div>
+                </div>
+
+                <div class="post-content">
+                    Thrilled to share that our #dataanalytics project won the innovation award! Special thanks to my amazing team who worked tirelessly to make this happen. This wouldn't have been possible without their dedication and expertise. #innovation #teamspirit #databusiness
+                </div>
+
+                <div class="post-image"><img src="https://careers.nesfircroft.com/uploads/best-large-rec-business_nes-fircroft.jpg" class="feed"></div>
+
+                <div class="post-engagement">
+                    <span>891 reactions • 120 comments • 245 shares</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="post-action-btn">
+                        <span>👍</span>
+                        <span>Like</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>💬</span>
+                        <span>Comment</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>↗️</span>
+                        <span>Share</span>
+                    </button>
+                    <button class="post-action-btn">
+                        <span>✈️</span>
+                        <span>Send</span>
+                    </button>
+                </div>
+            </article>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="sidebar-right">
+            <div class="news-card">
+                <h3>Today's top news</h3>
+
+                <div class="news-item">
+                    <div class="news-source">Tech Industry • Top news</div>
+                    <div class="news-title">AI breakthroughs reshape industry landscape</div>
+                    <div class="news-engagement">15.2K reactions</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Business • Trending</div>
+                    <div class="news-title">Remote work continues to dominate corporate culture</div>
+                    <div class="news-engagement">8.9K reactions</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Career • Featured</div>
+                    <div class="news-title">Skills in demand for 2025 job market</div>
+                    <div class="news-engagement">12.4K reactions</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Startup News • Trending</div>
+                    <div class="news-title">New unicorns emerge in the tech ecosystem</div>
+                    <div class="news-engagement">9.7K reactions</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-source">Career Development • Featured</div>
+                    <div class="news-title">Leadership trends for the new year</div>
+                    <div class="news-engagement">11.3K reactions</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkedIn | Messaging</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="index3.css">   <!-- UN FEED CSS -->
+<link rel="stylesheet" href="Messages.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER (SAME) ===== -->
+<header>
+  <div class="nav-container">
+    <a class="logo">in</a>
+
+    <input type="text" class="search-bar" placeholder="Search">
+
+    <ul class="nav-links">
+      <li><a href="feed.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+      <li><a href="network.html"><i class="fa-solid fa-user-group"></i><span>My Network</span></a></li>
+      <li><a href="jobs.html"><i class="fa-solid fa-briefcase"></i><span>Jobs</span></a></li>
+      <li class="active"><a href="#"><i class="fa-solid fa-comment-dots"></i><span>Message</span></a></li>
+      <li><a href="#"><i class="fa-solid fa-bell"></i><span>Notifications</span></a></li>
+    </ul>
+
+    <div class="nav-buttons">
+      <button class="btn btn-primary">Join now</button>
+      <button class="btn btn-secondary">Sign in</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<div class="container messages-layout">
+
+  <!-- ===== LEFT CHAT LIST ===== -->
+  <aside class="messages-sidebar">
+    <div class="messages-header">
+      <h3>Messaging</h3>
+      <i class="fa-solid fa-pen-to-square"></i>
+    </div>
+
+    <input class="message-search" placeholder="Search messages">
+
+    <div class="chat-list">
+      <div class="chat-item active">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg">
+        <div>
+          <h4>Praveen Kumar</h4>
+          <p>Hey, are you available?</p>
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg">
+        <div>
+          <h4>Abi Nav</h4>
+          <p>Thanks for connecting!</p>
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg">
+        <div>
+          <h4>Keerthana M</h4>
+          <p>Let’s schedule a call</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== CHAT WINDOW ===== -->
+  <main class="chat-window">
+    <div class="chat-header">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+      <div>
+        <h4>Praveen Kumar</h4>
+        <p>Aspiring Data Analyst</p>
+      </div>
+    </div>
+
+    <div class="chat-body">
+      <div class="message received">Hi 👋</div>
+      <div class="message received">Are you available for a quick chat?</div>
+      <div class="message sent">Yes, sure 😊</div>
+      <div class="message sent">Let me know the time</div>
+    </div>
+
+    <div class="chat-input">
+      <input placeholder="Write a message…">
+      <button><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>

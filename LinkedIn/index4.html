@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications | LinkedIn</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="notifications.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="index.html" class="logo">in</a>
+        <div class="search-box">
+          <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="my-network.html" class="nav-item">
+          <span class="nav-icon">👥</span>
+          <span class="nav-text">My Network</span>
+        </a>
+        <a href="jobs.html" class="nav-item">
+          <span class="nav-icon">💼</span>
+          <span class="nav-text">Jobs</span>
+        </a>
+        <a href="notifications.html" class="nav-item active">
+          <span class="nav-icon">🔔</span>
+          <span class="nav-text">Notifications</span>
+        </a>
+      </nav>
+      <div class="header-right">
+        <a href="messages.html" class="profile-link">
+          <span class="nav-icon">💬</span>
+          <span class="profile-text">Messages</span>
+        </a>
+        <a href="profile.html" class="profile-link">
+          <span class="nav-icon">👤</span>
+          <span class="profile-text">Profile</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-container notifications-container">
+    <!-- Notifications -->
+    <main class="notifications-main">
+      <!-- Filter Tabs -->
+      <div class="notification-tabs">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="connections">Connections</button>
+        <button class="tab-btn" data-tab="profile">Profile</button>
+        <button class="tab-btn" data-tab="jobs">Jobs</button>
+      </div>
+
+      <!-- All Notifications -->
+      <div class="tab-content active" id="all">
+        <div class="notification-item unread">
+          <img src="https://i.pravatar.cc/150?img=11" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Sarah Anderson</strong> accepted your connection request</p>
+            <p class="notif-time">2 hours ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=12" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Tech Company Inc</strong> viewed your profile</p>
+            <p class="notif-time">4 hours ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item unread">
+          <img src="https://i.pravatar.cc/150?img=13" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>James Wilson</strong> liked your post</p>
+            <p class="notif-time">5 hours ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=14" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Emma Johnson</strong> commented on your post</p>
+            <p class="notif-time">1 day ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=15" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>LinkedIn Learning</strong> recommended a course for you</p>
+            <p class="notif-time">2 days ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+      </div>
+
+      <!-- Connections Notifications -->
+      <div class="tab-content" id="connections">
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=16" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Michael Chen</strong> accepted your connection request</p>
+            <p class="notif-time">3 hours ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=17" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Lisa Thompson</strong> sent you a connection request</p>
+            <p class="notif-time">6 hours ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=18" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Robert Lee</strong> accepted your connection request</p>
+            <p class="notif-time">2 days ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+      </div>
+
+      <!-- Profile Notifications -->
+      <div class="tab-content" id="profile">
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=19" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Designer Co</strong> viewed your profile</p>
+            <p class="notif-time">1 hour ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=20" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>5 people</strong> viewed your profile this week</p>
+            <p class="notif-time">Yesterday</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=21" alt="User" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Tech Company</strong> looked at your profile</p>
+            <p class="notif-time">3 days ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+      </div>
+
+      <!-- Jobs Notifications -->
+      <div class="tab-content" id="jobs">
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=22" alt="Company" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>New job match:</strong> Senior Developer at Tech Solutions</p>
+            <p class="notif-time">Today</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=23" alt="Company" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>Hiring update:</strong> Your application is being reviewed</p>
+            <p class="notif-time">2 days ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://i.pravatar.cc/150?img=24" alt="Company" class="notif-avatar">
+          <div class="notif-content">
+            <p><strong>New job match:</strong> Product Manager at Innovation Labs</p>
+            <p class="notif-time">4 days ago</p>
+          </div>
+          <button class="close-notif">×</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+      <div class="promoted-widget">
+        <h4>Settings</h4>
+        <ul class="settings-list">
+          <li><a href="#" class="settings-link">Notification Settings</a></li>
+          <li><a href="#" class="settings-link">Email Preferences</a></li>
+          <li><a href="#" class="settings-link">Privacy Control</a></li>
+          <li><a href="#" class="settings-link">Manage Data</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+</body>
+</html>

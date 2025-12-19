@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: #e9edf5;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.container {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    
+}
+
+/* Sidebar */
+.sidebar {
+    width: 70px;
+    background: #1f2749;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 40px;
+}
+
+.sidebar-top {
+    width: 20px;
+    height: 20px;
+    background: #5d606e;
+    border-radius: 4px;
+}
+
+.sidebar-items {
+    width: 100%;
+}
+
+.sidebar-items li {
+    width: 18px;
+    height: 18px;
+    background: #9aa3c9;
+    border-radius: 50%;
+    margin: 18px auto;
+}
+
+/* Main content */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Top bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.bar-left,
+.bar-right {
+    width: 140px;
+    height: 10px;
+    background: #c3c8e2;
+    border-radius: 5px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    height:600px;
+    width:1350px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    background: #b5bdd6;
+    border-radius: 14px;
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.large {
+    grid-column: span 2;
+}
+    </style>
+ 
+</head>
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-top"></div>
+            <ul class="sidebar-items">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Top Bar -->
+            <div class="topbar">
+                <div class="bar-left"></div>
+                <div class="bar-right"></div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid">
+                <div class="card">Buttons</div>
+                <div class="card large">Cards</div>
+
+                <div class="card">Accounts<br>(Users)</div>
+                <div class="card">Calendar</div>
+                <div class="card">Integrations<br>(Apps)</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+        

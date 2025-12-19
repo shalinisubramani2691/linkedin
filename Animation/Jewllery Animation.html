@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewellery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height:3000px;
+      width:100%;
+      font-family: sans-serif;
+      overflow:auto;
+
+    }
+    
+    .menu-bar{
+      background-color: blanchedalmond;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+
+    }
+
+    .menu-bar ul{
+      list-style: none;
+      display: flex;
+    }
+
+    .menu-bar ul li{
+      padding: 10px 30px;
+      position: relative;
+    }
+
+    .menu-bar ul li a{
+      color: brown;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      transition: all 0.3s;
+      font-family: monospace;
+    }
+    
+  
+    .menu-bar ul li a:hover{
+      color: darkred;
+      
+    }
+    
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+      /* height: 900px;
+      width: 100%; */
+      background-color: blanchedalmond;
+      /* min-width: 1000px; */
+      inset: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      top: 100%;
+      z-index: 99;
+      position: absolute;
+     
+      
+    }
+    
+    .menu-bar ul li:hover .dropdown-menu{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      /* background-color: white; */
+      /* width: 100%; */
+    }
+
+    .dropdown-menu ul{
+        display: block;
+        /* margin: 10px; */
+        width: 200px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .dropdown-menu a{
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    } 
+
+    .dropdown-menu ul li{
+      display: block;
+      width:150px;
+      height:100%;
+      padding: 10px;
+    }
+
+    .dropdown-menu ul li a{
+        font-size: 15px;
+        font-weight: lighter;
+        
+    }
+
+    .dropdown-menu ul h3{
+        color: brown;
+        width: 100vh;
+        
+    }
+
+    .button{
+        background-color: darkred;
+        color: white;
+        height: 35px;
+        width: 220px;
+        border-radius: 25px;
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        right: 3px;
+    }
+
+    .firstlineboxes{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:15px;
+            margin-top:15px;
+        }
+        .box1{
+            background-image:url(https://i.etsystatic.com/13151875/r/il/9c83fd/3933406756/il_1080xN.3933406756_nw3f.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:150px;
+            height:150px;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box2{
+            background-image:url(https://tse1.mm.bing.net/th/id/OIP.hrHzOK966CXHxwcg-tm3wwHaJ1?pid=Api&P=0&h=180);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:150px;
+            height:150px;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box3{
+            background-image:url(https://tse2.mm.bing.net/th/id/OIP.dbNC2dJudI6pg7gg-y6NkgHaHa?pid=Api&P=0&h=180);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:150px;
+            height:150px;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box4{
+            background-image:url(https://tse1.mm.bing.net/th/id/OIP.DYjQGvBTt41MaDLIU2o4dgHaHa?pid=Api&P=0&h=180);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:150px;
+            height:150px;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box5{
+            background-image:url(https://tse2.mm.bing.net/th/id/OIP.TKpP_NDYVA30OsrvqiklTgHaHa?pid=Api&P=0&h=180);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:150px;
+            height:150px;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box6{
+            background-image:url(https://tse2.mm.bing.net/th/id/OIP.vAaJhsqjhWrwpmrlOFq4dwHaHH?pid=Api&P=0&h=180);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:150px;
+            height:150px;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box7{
+            background-image:url(https://www.chidambaramgoldcovering.com/image/cache/catalog/ChidambaramGoldCovering/Thali%20Designs/thal121-new-lakshmi-vinayagar-full-thali-set-tamil-traditional-mangalyam-set-shop-online-1-1700x2000.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:150px;
+            height:150px;
+            border-radius:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        p{
+            color:brown;
+            font-size:18px;
+            position:absolute;
+            top:280px;
+        }
+        .filter{
+            color:brown;
+            font-size:20px;
+            border:1px solid brown;
+            padding:5px;
+            position:absolute;
+            top:340px;
+            left:50px;
+        }
+        .filter1{
+            font-size:18px;         
+        }
+        .filter2{
+            font-size:26px;
+            color:brown;
+            position:absolute;
+            top:345px;
+            left:170px;
+        }
+        .filter-right{
+            color:brown;
+            border:1px solid brown;
+            padding:5px;
+            position:absolute;
+            top:340px;
+            right:50px;
+        }
+        .star1{
+            background:linear-gradient(to right,deepskyblue,silver);
+            color:darkblue;
+            width:170px;
+            padding:15px;
+            border-radius:5px;
+            position:absolute;
+            top:400px;
+            right:450px;
+        }
+        .star2{
+            background-color:wheat;
+            color:brown;
+            width:170px;
+            padding:15px;
+            border-radius:5px;
+            position:absolute;
+            top:400px;
+            right:260px;
+        }
+        .truck{
+            background-color:khaki;
+            color:brown;
+            width:190px;
+            padding:15px;
+            border-radius:5px;
+            position:absolute;
+            top:400px;
+            right:48px;
+        }
+
+        .secondlineboxes h4,.thirdlineboxes h4{
+            color:brown;
+            position:absolute;
+            top:335px;
+        }
+        .secondlineboxes p{
+            position:absolute;
+            top:380px;
+        }
+        .thirdlineboxes p{
+            position:absolute;
+            top:380px;
+        }
+        .underline1{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            left:100px;
+        }
+
+        .underline2{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            left:455px;
+        }
+
+        .underline3{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            right:555px;
+        }
+
+        .underline4{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            right:200px;
+        }
+
+        .underline5{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            left:100px;
+        }
+
+        .underline6{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            left:467px;
+        }
+
+        .underline7{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            right:555px ;
+        }
+
+        .underline8{
+            text-decoration:line-through;
+            position:absolute;
+            top:335px;
+            right:200px;
+        }
+        .circle i{
+            border-radius:50%;
+            border:1.5px solid brown;
+            color:brown;
+            width:24px;
+            height:24px;
+            padding:4px;
+        }
+        .secondlineboxes{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:25px;
+            margin-top:15px;
+            position:absolute;
+            top:500px;
+            padding-left:40px;
+        }
+        .thirdlineboxes{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:25px;
+            margin-top:15px;
+            position:absolute;
+            top:920px;
+            padding-left:40px;
+        }
+        .fourthlineboxes{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:25px;
+            margin-top:15px;
+            position:absolute;
+            top:400px;
+            padding-left:40px;
+        }
+
+        .secondbox1{
+            background-image:url(https://i.pinimg.com/1200x/06/d8/55/06d8551c6f2f561176dba3376c987463.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .secondbox2{
+            background-image:url(https://i.pinimg.com/1200x/53/fe/e7/53fee70686d3c9c9aa7d94b005185d77.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .secondbox3{
+            background-image:url(https://i.pinimg.com/736x/67/c3/e4/67c3e4f9730e3c79232e9f7fe5b17c27.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .secondbox4{
+            background-image:url(https://i.pinimg.com/1200x/38/ae/25/38ae258145719845a2fb6e7d3526d415.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .thirdbox1{
+            background-image:url(https://i.pinimg.com/736x/af/16/75/af1675b989af35b7a6fec9aeddd6831a.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .thirdbox2{
+            background-image:url(https://i.pinimg.com/1200x/a2/04/53/a2045356a34e8b15ad8aed35f95d9471.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .thirdbox3{
+            background-image:url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/7/1/710a035542_mood.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .thirdbox4{
+            background-image:url(https://i.pinimg.com/736x/fe/5f/f2/fe5ff2fe0197816bc6961eca113743bb.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+        .secondbox1:hover{
+            background-image:url(https://i.pinimg.com/1200x/2e/29/bc/2e29bca15f6f2b6f17ffb80ee3119a28.jpg);
+        }
+        .secondbox2:hover{
+            background-image:url(https://i.pinimg.com/736x/35/b5/8a/35b58a226a4f0b710f4adf1b5b98f40c.jpg);
+        }
+        .secondbox3:hover{
+            background-image:url(https://i.pinimg.com/736x/e8/3c/32/e83c32400ca939a081ed237d8138d9f1.jpg);
+        }
+        .secondbox4:hover{
+            background-image:url(https://i.pinimg.com/736x/d5/3d/64/d53d64b20d51f24a61a71f7280abea8c.jpg);
+        }
+        .thirdbox1:hover{
+            background-image:url(https://i.pinimg.com/736x/28/e1/a8/28e1a8771485fc622b2e69d21f198863.jpg);
+        }
+        .thirdbox2:hover{
+            background-image:url(https://i.pinimg.com/1200x/ad/d8/ee/add8eee37c60def6c406b6ba61b51f6b.jpg);
+        }
+        .thirdbox3:hover{
+            background-image:url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/7/1/710a035542_model_2.jpg);
+        }
+        .thirdbox4:hover{
+            background-image:url(https://i.pinimg.com/736x/a7/de/f5/a7def5e37ce20fe495f7f861f2c2c7c6.jpg);
+        }    
+
+        .fourthbox4 p{
+            position:absolute;
+            top:360px;
+        }
+
+        .fourthbox1{
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+
+        .fourthbox2{
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+
+        .fourthbox3{
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+
+        .fourthbox4{
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            width:330px;
+            height:330px;
+            border-radius:10px;
+        }
+
+        .fourthbox1{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/1/9/193a275029_mood.jpg);
+        }
+
+        .fourthbox2{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/1/9/193a416741_prop.jpg);
+        }
+
+        .fourthbox3{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/8/5/857a043244_prop.jpg);
+        }
+
+        .fourthbox4{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/w/k/wk-file-1.jpg);
+        }
+
+        .fourthbox1:hover{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/1/9/193a275029_model_2.jpg)
+        }
+
+        .fourthbox2:hover{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/1/9/193a416741_profile.jpg);
+
+        }
+
+        .fourthbox3:hover{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/8/5/857a043244_profile.jpg);
+        }
+
+        .fourthbox4:hover{
+            background-image: url(https://media.grtjewels.com/catalog/product/cache/529b66f1f87de88553487754ab9e4dd4/g/a/ganapathy_gold_coins.jpg);
+        }
+
+  </style>
+</head>
+<body>
+  <div class="menu-bar">
+    <ul>
+      <li>
+        <a href="#">All Jewellery</a>
+        <div class="dropdown-menu">
+          <ul>
+            <h3>All Jewellery</h3>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#">Pendant</a></li>
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Bangles & Bracelets</a></li>
+            <li><a href="#">Chain</a></li>
+            <li><a href="#">Mangalsutra</a></li>
+            <li><a href="#">Necklace</a></li>
+            <li><a href="#">Nosepin</a></li>
+            <li><a href="#">Ancklets</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">Gold</a>
+        <div class="dropdown-menu">
+          <ul>
+           <h3>Earrings</h3>
+           <li><a href="#">Studs</a></li>
+           <li><a href="#">Hangings</a></li>
+           <li><a href="#">Drops</a></li>
+           <li><a href="#">Jumkas</a></li>
+           <li><a href="#">Hoops & Bali</a></li>
+           </ul>
+           <ul>
+            <h3>Rings</h3>
+            <li><a href="#">Engagement Rings</a></li>
+            <li><a href="#">Casual Rings</a></li>
+           </ul>
+           <ul>
+            <h3>Bangles & Braclets</h3>
+            <li><a href="#">Bangles</a></li>
+            <li><a href="#">Cuff Bracelets</a></li>
+            <li><a href="#">Chain Braclets</a></li>
+            <li><a href="#">Bangle Bracelets</a></li>
+           </ul>
+           <ul>
+            <h3>Necklace</h3>
+            <li><a href="#">Short Necklace</a></li>
+            <li><a href="#">Long Necklace</a></li>
+           </ul>
+         </div>
+      </li>
+      <li>
+        <a href="#">Diamond</a>
+        <div class="dropdown-menu">
+          <ul>
+           <h3>Earrings</h3>
+           <li><a href="#">Studs</a></li>
+           <li><a href="#">Hangings</a></li>
+           <li><a href="#">Drops</a></li>
+           <li><a href="#">Jumkas</a></li>
+           <li><a href="#">Hoops & Bali</a></li>
+           </ul>
+           <ul>
+            <h3>Rings</h3>
+            <li><a href="#">Engagement Rings</a></li>
+            <li><a href="#">Casual Rings</a></li>
+           </ul>
+           <ul>
+            <h3>Bangles & Braclets</h3>
+            <li><a href="#">Bangles</a></li>
+            <li><a href="#">Cuff Bracelets</a></li>
+            <li><a href="#">Chain Braclets</a></li>
+            <li><a href="#">Bangle Bracelets</a></li>
+           </ul>
+           <ul>
+            <h3>Necklace</h3>
+            <li><a href="#">Short Necklace</a></li>
+            <li><a href="#">Long Necklace</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Silver</a></li>
+      <li><a href="#">Platinum</a></li>
+      <li><a href="#">Coins & Bars</a></li>
+      <li><a href="#">Gift Store</a></li>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Offers</a></li>
+      <li><a href="#">Solitaire</a></li>
+      <li class="button">Jewellery purchase plan</li>
+    </ul>
+    </div>
+    <div class="firstlineboxes">
+        <div class="box1">
+            <p>Bangles</p>
+        </div>
+        <div class="box2">
+            <p>Chain</p>
+        </div>
+        <div class="box3">
+            <p>Earrings</p>
+        </div>
+        <div class="box4">
+            <p>Pendant</p>
+        </div>
+        <div class="box5">
+            <p>Ring</p>
+        </div>
+        <div class="box6">
+            <p>Necklace</p>            
+        </div>
+        <div class="box7">
+            <p>Mangalsutra</p>
+        </div>
+    </div>
+    <div class="filter">
+        <i class="fa-solid fa-sliders"></i>
+         <span class="filter1">Filters</span>
+     </div>
+        <span class="filter2">6519 ITEMS</span>
+    <div class="filter-right">
+        <i class="fa-solid fa-sliders"></i>
+        <span>Sort New Drop</span>
+    </div>
+    <div class="star1">
+        <i class="fa-regular fa-star"></i>
+        <span>NEW DROP</span>
+    </div>
+    <div class="star2">
+        <i class="fa-regular fa-star"></i>
+        <span>BEST SELLER</span>
+    </div>
+    <div class="truck">
+        <i class="fa-regular fa-truck"></i>
+        <span>OUICK DELIVERY</span>
+    </div>
+    <div class="secondlineboxes">
+        <div class="secondbox1">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹89,500</h4>
+            <span class="underline1">₹1,09,500</span>
+            <p>15%Off</p>
+        </div>
+        <div class="secondbox2">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹98,795</h4>
+            <span class="underline2">₹1,18,795</span>
+            <p>15%Off</p>            
+        </div>
+        <div class="secondbox3">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹90,490</h4>
+            <span class="underline3">₹1,10,490</span>
+            <p>15%Off</p> 
+        </div>
+        <div class="secondbox4">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹89,080</h4>
+            <span class="underline4">₹1,09,080</span>
+            <p>15%Off</p>
+        </div>
+    </div>
+    <div class="thirdlineboxes">
+        <div class="thirdbox1">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹95,708</h4>
+            <span class="underline5">₹1,15,708</span>
+            <p>15%Off</p>
+        </div>
+        <div class="thirdbox2">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹1,00,000</h4>
+            <span class="underline6">₹1,20,000</span>
+            <p>15%Off</p>
+        </div>
+        <div class="thirdbox3">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>       
+            <h4>₹96,390</h4>
+            <span class="underline7">₹1,16,390</span>
+            <p>15%Off</p>
+        </div>
+        <div class="thirdbox4">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹89,789</h4> 
+            <span class="underline8">₹1,09,789</span>      
+            <p>15%Off</p>     
+        </div>
+        <div class="fourthlineboxes">
+        <div class="fourthbox1">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹87,845</h4>
+            <span class="underline1">₹91,052</span>
+            <p>4%Off</p>
+        </div>
+        <div class="fourthbox2">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹57,376</h4>
+            <span class="underline2">₹59,493</span>
+            <p>5%Off</p>            
+        </div>
+        <div class="fourthbox3">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹35,604</h4>
+            <span class="underline3">₹37,227</span>
+            <p>4%Off</p> 
+        </div>
+        <div class="fourthbox4">
+            <div class="circle">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-tag"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            <h4>₹98,408</h4>
+            <!-- <span class="underline4">₹</span> -->
+            <p>Weight: 7.999 gms</p>
+        </div>
+    </div>
+    </div>    
+
+
+  
+</body>
+</html>

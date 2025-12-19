@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Card Flipper</title>
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fff;
+            display: flex;
+            padding: 40px;
+            justify-content: center;
+        }
+
+        .card{
+            background-image:url(ATM.jpg);
+            height:300px;
+            width:500px;
+            border-radius: 20px;
+            padding: 25px;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+            overflow: hidden;
+            background-repeat: no-repeat;
+            perspective: 800px;
+            transform-style: preserve-3d;
+            transform-origin:left;
+            backface-visibility: hidden;
+        
+        }
+
+        .card::before{
+            position:absolute;
+            background-image:url(ATM.jpg);
+        }
+
+        .bank-name{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            /* margin-top: 5px; */
+            /* margin-bottom: 25px; */
+            font-size:22px;
+            font-weight: bold;
+            
+        }
+
+        .card-number{
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+            letter-spacing: 3px;
+        }
+
+        .validity{
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+            margin-bottom: 25px;
+        }
+
+        .validity span{
+            font-size: 12px;
+            margin-right: 80px;
+            margin-left: 0px;
+            margin-top: 100px;
+        }
+
+        .validity strong{
+            display:block;
+            font-size: 16px;
+            margin-top: 0px;
+            margin-left: 50px;
+            margin-top:0;
+            margin-bottom: 20px;
+            
+        }
+
+        .name{
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .visa{
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+
+        /*.logo .face{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: -10px;
+        }*/
+
+        i{
+            font-size: 50px;
+        }
+        
+        .top-text{
+            text-align: center;
+            margin-top: 15px;
+            font-size: 20px;
+            color: #ffcc00;
+            font-weight: 600;
+        }
+
+        .card-content{
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            
+            
+        }
+
+        .brand{
+            margin: 0;
+            font-size: 26px;
+            color: #ffcc00;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .tagline{
+            margin: 0;
+            margin-top: 5px;
+            font-size: 16px;
+            color: #ffd966;
+            text-align: center;
+        }
+
+        .card:hover{
+            transform: rotateY(-180deg);
+            transition: transform 5s;
+        }
+
+        .back-side{
+            background-image:url(ATM.jpg);
+            position: absolute;
+        }
+
+        .blank{
+            background-color: black;
+            height: 50px;
+            width: 550px;
+            margin-left:0px;
+            margin-bottom: 85px;
+        }
+
+        .logo{
+            /* position: absolute; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">
+            <div class="face"></div>
+         </div>
+            <h2 class="bank-name">State Bank Of India</h2>
+            <div class="card-number">S B K 0 1 0 1 1 0 0 0 0 7</div>
+            <div class="validity">
+                <div>
+                    <span>VALID<br>FROM</span>
+                    <strong>03/25</strong>
+                </div>
+                <div>
+                    <span>VALID<br>UPTO</span>
+                    <strong>06/25</strong>
+                </div>
+            </div>
+                <div class="name">SHALU</div>
+                <div class="visa">
+                    <span><i class="fa-brands fa-cc-visa"></i></span>
+                </div>
+        </div>
+            <div class="card">
+                <div class="top-text">Enjoy Banking With Us!!!</div>
+                    <div class="card-content">
+                        <div class="blank"></div>
+                        <h2 class="brand">FinSmiles</h2>
+                        <p class="tagline">Future Ready-Financially Happy</p>
+                    </div>
+            </div>  
+</body>
+</html>

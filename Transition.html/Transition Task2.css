@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height:200px;
+    width:200px;
+    border:1px solid blue;
+    background-image:Url(./Linga.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 75px auto;
+    perspective: 800px;
+    /* transform-origin: left; */
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: left;
+ 
+}
+
+.face{
+    height: 100%;
+    width:100%;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-color:tomato;
+}
+
+.back{
+    background-color: green;
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    transform: rotateY(-180deg);
+    transition: transform 1s;
+}
